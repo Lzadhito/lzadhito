@@ -24,9 +24,79 @@ header {
   height: 100vh;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+section {
+  padding: 10rem;
+}
+
+/* padding: 10rem */
+
 .header-content {
-  height: calc(100vh - 12em);
+  max-height: 60vh;
+  padding: 10rem;
+}
+
+.exp {
   display: grid;
-  justify-content: center;
+  grid-template-rows: 1fr 6fr 2fr;
+  grid-gap: 5rem;
+}
+
+.exp > h2 {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 4fr 2fr;
+  grid-gap: 10rem;
+}
+
+#tokopedia {
+  background-color: #03ac0e;
+}
+
+#ecomindo {
+  background-color: rgb(27, 84, 220);
+}
+
+.card {
+  text-align: justify;
+  display: grid;
+}
+
+.card > img {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 5rem;
+}
+
+.grid-6 > .card:nth-child(n + 4) {
+  text-align: center;
   align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
